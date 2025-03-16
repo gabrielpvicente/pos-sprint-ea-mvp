@@ -21,4 +21,30 @@ Contudo, não foram realizadas as análises descritivas e diagnósticas. Dessa f
 - Alunos com reprovações no segundo semestre tendem a abandonar o curso?
 - Qual o percentual de abandono com base nos índices nacionais como taxa de desemprego, inflação e PIB?
 
-  
+# Detalhamento
+## 1. Busca pelos dados
+A base de dados que será utilizada tem como título "Predict Students' Dropout and Academic Success" e foi retirada do UC Irvine Machine Learning Repository.
+
+UC Irvine Machine Learning Repository: https://archive.ics.uci.edu/
+
+Predict Students' Dropout and Academic Success Dataset: https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success
+
+Os dados presentes nesse dataset são provenientes de diversos databases. Alguns dados são coletados no momento da matrícula do aluno (histórico escolar, informações demográficas e socioeconômicas) e outros dados relacionados à performance do aluno no início do curso são coletados ao final do primeiro e segundo semestre da graduação. Os dados são referentes à alunos de universidades portuguesas, porém, não há uma definição de quais ou quantas universidades contribuíram com o dataset.
+
+O dataset em questão está licensiado sob a [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/legalcode) e pode ser compartilhado e adaptado desde que mencionada a sua origem.
+
+## 2. Coleta
+
+TBD - Verificar na aula como o professor irá fazer
+
+## 3. Modelagem
+
+## 4. Carga
+
+## 5. Análise
+###  a. Qualidade de dados
+
+###  b. Solução do problema
+
+# Autoavaliação
+
