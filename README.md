@@ -34,10 +34,15 @@ Os dados presentes nesse dataset são provenientes de diversos databases. Alguns
 O dataset em questão está licensiado sob a [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/legalcode) e pode ser compartilhado e adaptado desde que mencionada a sua origem.
 
 ## 2. Coleta
+O dataset foi baixado do link referenciado na seção acima e feito o upload num repositório meu do github: https://github.com/gabrielpvicente/pos-sprint-ml-a-mvp/blob/main/data.csv
 
-TBD - Verificar na aula como o professor irá fazer
+A coleta do mesmo para dentro do Databricks foi realizada fazendo a leitura com a biblioteca pandas, como é possível ver na imagem abaixo:
+<img width="680" alt="image" src="https://github.com/user-attachments/assets/16f941c4-d7d2-426a-a145-3d6b174bb108" />
+
 
 ## 3. Modelagem
+
+
 
 ## 4. Carga
 
