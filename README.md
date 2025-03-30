@@ -83,7 +83,38 @@ Criação da tabela no database bronze e execução de SELECT para visualizaçã
 ## 5. Análise
 ###  a. Qualidade de dados
 
+Na página de onde o dataset foi retirado, está descrito que o mesmo passou por pré processamento para lidar com anomalias, registros atípicos (outliers) e também valores faltantes/em branco/nulos.
+
+Abaixo estão evidenciadas algumas validações feitas para garantir a qualidade do dataset:
+
+**Verificar Nulos:** Realiza uma contagem da quantidade de valores nulos encontrados em cada coluna.
+Nenhum valor nulo encontrado em nenhuma das colunas.
+<p align="center">
+  <img width="676" alt="image" src="https://github.com/user-attachments/assets/5855b631-beda-4f6b-b600-7588e11d9ff9" />
+</p>
+
+**Verificar Duplicatas:** Realiza uma contagem da quantidade de vezes que cada registro apareceu e mostra aqueles que apareceram mais de uma vez.
+Nenhum registro apareceu mais de 1 vez no dataset.
+<p align="center">
+  <img width="674" alt="image" src="https://github.com/user-attachments/assets/beacc20a-4292-489b-8511-edca758eb0cc" />
+</p>
+
+
 ###  b. Solução do problema
+
+- Quais são os cursos com maior percentual de abandono?
+- Há diferença entre o número de abandonos devido ao período do curso (noturno ou diurno)?
+- O percentual de abandono de alunos estrangeiros é maior do que o percentual de abandono dos portugueses?
+- A qualificação dos pais parece interferir na taxa de abandono dos alunos?
+- A ocupação dos pais parece interferir na taxa de abandono dos alunos?
+- Alunos com notas de ingresso menores têm maior participação no número de abandonos?
+- Alunos com necessidades especiais têm maior tendência a abandonar o curso?
+- Qual o percentual de abandono por sexo?
+- O percentual de abandono de alunos com bolsa de estudos é menor?
+- A idade do aluno no momento do ingresso parece interferir no abandono do curso?
+- Alunos com reprovações no primeiro semestre tendem a abandonar o curso?
+- Alunos com reprovações no segundo semestre tendem a abandonar o curso?
+- Qual o percentual de abandono com base nos índices nacionais como taxa de desemprego, inflação e PIB?
 
 # Autoavaliação
 
