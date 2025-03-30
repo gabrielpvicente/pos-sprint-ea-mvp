@@ -74,11 +74,60 @@ Renomeação das colunas para substituição de caracteres especiais que não s�
   <img width="674" alt="image" src="https://github.com/user-attachments/assets/e50eb08e-e761-4e6c-9cec-496c551a3243" />
 </p>
 
-Criação da tabela no database bronze e execução de SELECT para visualização de amostra dos dados.
+Criação da tabela students_dropout no database bronze e execução de SELECT para visualização de amostra dos dados.
 
 <p align="center">
   <img width="677" alt="image" src="https://github.com/user-attachments/assets/9e8d6662-ed03-4b10-8021-b7aeacb2b488" />
 </p>
+
+Criação da tabela de apoio marital_status no database bronze, inserção dos dados e execução de SELECT para visualização dos dados.
+
+<p align="center">
+  <img width="676" alt="image" src="https://github.com/user-attachments/assets/a51ae093-3734-4a03-8a3b-0abcd7cc7ae4" />
+  <img width="676" alt="image" src="https://github.com/user-attachments/assets/2532877f-fb12-4d3e-bd5e-4eb3beeb26c9" />
+  <img width="679" alt="image" src="https://github.com/user-attachments/assets/316305a2-a6e2-456f-8be9-1c2245d2d46e" />
+</p>
+
+Criação da tabela de apoio application_mode no database bronze, inserção dos dados e execução de SELECT para visualização dos dados.
+
+<p align="center">
+  <img width="677" alt="image" src="https://github.com/user-attachments/assets/6c2f8f3f-c0e1-4d73-bfbf-2ac4164c1657" />
+  <img width="676" alt="image" src="https://github.com/user-attachments/assets/6a552c90-3aa3-432a-86cf-beed438d2d82" />
+  <img width="677" alt="image" src="https://github.com/user-attachments/assets/c0533e0d-58d0-4873-96d2-9e12496b8a25" />
+</p>
+
+Criação da tabela de apoio course no database bronze, inserção dos dados e execução de SELECT para visualização dos dados.
+
+<p align="center">
+  <img width="674" alt="image" src="https://github.com/user-attachments/assets/06d90b12-485c-4dac-9123-d28972f84673" />
+  <img width="677" alt="image" src="https://github.com/user-attachments/assets/b466c812-9c58-4965-a5dc-a44318b2091e" />
+  <img width="675" alt="image" src="https://github.com/user-attachments/assets/b5dd1de4-d520-4b75-97b6-6d0025c65a5a" />
+</p>
+
+Criação da tabela de apoio qualification no database bronze, inserção dos dados e execução de SELECT para visualização dos dados.
+
+<p align="center">
+  <img width="675" alt="image" src="https://github.com/user-attachments/assets/84205ae0-8b56-4e5e-a96b-b176c65227a8" />
+  <img width="676" alt="image" src="https://github.com/user-attachments/assets/c4c8b6be-f3b5-4adc-b507-6d8dc96d036a" />
+  <img width="678" alt="image" src="https://github.com/user-attachments/assets/6c6afc24-48f0-4bf9-9f44-6be856a3b9f7" />
+</p>
+
+Criação da tabela de apoio nationality no database bronze, inserção dos dados e execução de SELECT para visualização dos dados.
+
+<p align="center">
+  <img width="677" alt="image" src="https://github.com/user-attachments/assets/f317eebb-da56-4f7e-a874-a01e97f3d91d" />
+  <img width="679" alt="image" src="https://github.com/user-attachments/assets/0937afea-8160-4aad-931f-3202c7988dc5" />
+  <img width="680" alt="image" src="https://github.com/user-attachments/assets/cfc4808b-c3b7-47e4-b272-197e58b05ebc" />
+</p>
+
+Criação da tabela de apoio occupation no database bronze, inserção dos dados e execução de SELECT para visualização dos dados.
+
+<p align="center">
+  <img width="677" alt="image" src="https://github.com/user-attachments/assets/9510ae90-cd11-4f24-9675-0c3537fbcaad" />
+  <img width="676" alt="image" src="https://github.com/user-attachments/assets/b2d62ae1-580e-42a9-ba06-313649ce140e" />
+  <img width="677" alt="image" src="https://github.com/user-attachments/assets/89ebc6e0-d8d3-4656-b9a3-95ee4ac5ccc2" />
+</p>
+
 
 ## 5. Análise
 ###  a. Qualidade de dados
