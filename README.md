@@ -42,6 +42,7 @@ A coleta do mesmo para dentro do Databricks foi realizada fazendo a leitura com 
 
 ## 3. Modelagem
 
+![image](https://github.com/user-attachments/assets/d168b683-f168-4332-aedd-d3ac08bf04f3)
 
 
 ## 4. Carga
