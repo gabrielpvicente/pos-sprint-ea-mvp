@@ -152,7 +152,27 @@ Nenhum registro apareceu mais de 1 vez no dataset.
 ###  b. Solução do problema
 
 - Quais são os cursos com maior percentual de abandono?
+  
+Criação de tabela temporária com a quantidade de registros por curso
+<img width="676" alt="image" src="https://github.com/user-attachments/assets/a71319db-9f81-45c3-8922-2f077cb3ca86" />
+
+Criação de tabela temporária com a quantidade de desistência por curso
+<img width="677" alt="image" src="https://github.com/user-attachments/assets/fd2b072b-9d38-48cd-a44d-b26e7a0a329d" />
+
+Query que calcula o percentual de desistência mostrando os 5 cursos com maior percentual
+<img width="673" alt="image" src="https://github.com/user-attachments/assets/5c8f6395-40ee-42e8-91d1-b552bdc8cc32" />
+
 - Há diferença entre o número de abandonos devido ao período do curso (noturno ou diurno)?
+
+Criação de tabela temporária com a quantidade de registros por período
+<img width="676" alt="image" src="https://github.com/user-attachments/assets/45f25afa-b8d1-4ff3-950c-5e30b2eee3f8" />
+
+Criação de tabela temporária com a quantidade de desistência por período
+<img width="676" alt="image" src="https://github.com/user-attachments/assets/9745c416-8ad3-4e29-a18b-ae558716b877" />
+
+Query que calcula o percentual de desistência mostrando que o período noturno (representado pelo inteiro 0) tem maior percentual de desistência se comparado ao período diurno (representado pelo inteiro 1)
+<img width="678" alt="image" src="https://github.com/user-attachments/assets/8ee9fa25-d4c7-47b9-9294-528427b93a26" />
+
 - O percentual de abandono de alunos estrangeiros é maior do que o percentual de abandono dos portugueses?
 - A qualificação dos pais parece interferir na taxa de abandono dos alunos?
 - A ocupação dos pais parece interferir na taxa de abandono dos alunos?
