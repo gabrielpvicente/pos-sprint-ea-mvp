@@ -156,7 +156,7 @@ Criação de tabela temporária com a quantidade de registros por curso
 Criação de tabela temporária com a quantidade de desistência por curso
 <img width="677" alt="image" src="https://github.com/user-attachments/assets/fd2b072b-9d38-48cd-a44d-b26e7a0a329d" />
 
-Query que calcula o percentual de desistência mostrando os 5 cursos com maior percentual
+Query que calcula o percentual de desistência mostrando os 5 cursos com maior taxa de abandono
 <img width="673" alt="image" src="https://github.com/user-attachments/assets/5c8f6395-40ee-42e8-91d1-b552bdc8cc32" />
 
 
@@ -168,7 +168,7 @@ Criação de tabela temporária com a quantidade de registros por período
 Criação de tabela temporária com a quantidade de desistência por período
 <img width="676" alt="image" src="https://github.com/user-attachments/assets/9745c416-8ad3-4e29-a18b-ae558716b877" />
 
-Query que calcula o percentual de desistência mostrando que o período noturno (representado pelo inteiro 0) tem maior percentual de desistência se comparado ao período diurno (representado pelo inteiro 1)
+Query que calcula o percentual de desistência mostrando que o período noturno (representado pelo inteiro 0) tem maior taxa de desistência se comparado ao período diurno (representado pelo inteiro 1)
 <img width="678" alt="image" src="https://github.com/user-attachments/assets/8ee9fa25-d4c7-47b9-9294-528427b93a26" />
 
 
@@ -205,6 +205,7 @@ Criação de tabela temporária com a quantidade de desistência por escolaridad
 Query que calcula o percentual de desistência mostrando os 10 níveis de escolaridade dos pais com maior percentual
 <img width="675" alt="image" src="https://github.com/user-attachments/assets/be3a53ac-5c96-46ce-8ea2-33eb5d0484d6" />
 
+Difícil achar relação entre a qualificação dos pais e a taxa de abandono dos alunos, especialmente por ter tido muitas qualificações variadas que apresentaram alta taxa de abandono dos alunos.
 
 5. A ocupação dos pais parece interferir na taxa de abandono dos alunos?
 
@@ -216,6 +217,7 @@ Query que calcula o percentual de desistência mostrando as 10 ocupações das m
 Query que calcula o percentual de desistência mostrando os 10 ocupações dos pais com maior percentual
 <img width="674" alt="image" src="https://github.com/user-attachments/assets/7e861a73-886f-4c0d-b450-0610132f5878" />
 
+Alunos com pais sem ocupação ou estudantes apresentaram maior taxa de abandono.
 
 6. Alunos com notas de ingresso menores têm maior participação no número de abandonos?
 
@@ -227,7 +229,7 @@ Query que obtém as 10 maiores notas
 
 <img width="673" alt="image" src="https://github.com/user-attachments/assets/e36fa542-a817-480f-a892-4966ac73f832" />
 
-Query que calcula o percentual de desistência mostrando as 10 notas com maior percentual
+Query que calcula o percentual de desistência mostrando as 10 notas com maior percentual. É possível verificar uma maior incidência de notas mais baixas nessa listagem.
 <img width="676" alt="image" src="https://github.com/user-attachments/assets/4b4e5623-90d9-417c-b2b9-b39e4ee2b49f" />
 
 
@@ -261,9 +263,15 @@ Query que obtém as 10 idades mais altas no momento de ingresso
 
 <img width="674" alt="image" src="https://github.com/user-attachments/assets/450c14b9-5428-42ad-b8ad-ce3c942efd79" />
 
-Query que calcula o percentual de desistência mostrando as 10 idades com maior percentual
+Query que calcula o percentual de desistência mostrando as 10 idades com maior percentual. É possível observar predominança de alunos mais velhos com maior taxa de abandono.
 <img width="675" alt="image" src="https://github.com/user-attachments/assets/14078aa4-2ad8-49b8-a9fb-d0c92595b7f1" />
 
 
 # Autoavaliação
+Foi possível analisar e buscar respostas para as 10 questões levantadas na seção de Objetivos. Nem todas as perguntas tiveram respostas diretas, devido a complexidade e proximidade dos números obtidos, como por exemplo a pergunta 4 (A qualificação dos pais parece interferir na taxa de abandono dos alunos?). Mas o levantamento das qualificações tanto de pai quanto de mãe que apresentaram maior incidência nos abandonos foi realizado, assim como todos os levantamentos necessários para as demais perguntas.
 
+Como mencionado na seção de Modelagem, o modelo de dados utilizado era flat, ou seja, um único arquivo que já continha todas as informações e correlações necessárias. Porém, muitas dessas informações eram representadas por IDs (números inteiros). No momento de executar a etapa de Análise e Solução do Problema, não mostrou-se factível obter esses IDs para representar valores de Curso, Grau de escolaridade e Nacionalidade, tendo que buscar o real valor no catálogo de dados. Por esse motivo, foram criadas tabelas auxiliares que ao serem utilizadas, possibilitaram a obtenção dos valores diretamente na execução das queries, sem necessidade de consulta no catálogo.
+
+Como o dataset obtido já havia passado por um pré processamento e tratamentos necessários, não utilizamos nesse trabalho a estratégia de criar as tabelas num database raw e depois evoluí-las para camadas mais especializadas. As tabelas foram criadas e utilizadas todas num único database nomeado de bronze.
+
+Um próximo passo interessante para esse trabalho seria a criação de gráficos para uma melhor visualização das análises realizadas.
