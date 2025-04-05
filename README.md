@@ -43,13 +43,37 @@ O modelo de dados que será utilizado é flat, com um dataset único que foi con
 
 Abaixo temos um Catálogo de Dados com o nome das colunas, tipo de dado, uma descrição (tradução para o português), valores esperados/possíveis e um informativo da existência ou não de registros nulos/vazios para a respectiva coluna.
 
-Para facilitar o manuseio do dataset, várias colunas como o Curso, Grau de escolaridade e Nacionalidade, são do tipo inteiro. Dessa forma, será necessário recorrer ao Catálogo de Dados no momento da análise para correlacionar os números aos valores (Exemplo: O inteiro 9070 representa o curso de Communication Design). 
-
 Caso necessário, a imagem abaixo está disponibilizada também em formato xlsx no seguinte link: 
-
 https://github.com/gabrielpvicente/pos-sprint-ea-mvp/blob/main/Modelagem%20-%20MVP%20-%20Eng%20Dados.xlsx
 
 ![MVP-2](https://github.com/user-attachments/assets/ea66ad2f-92fd-40ad-bef6-ac79f76145cc)
+
+Devido a finalidade para a qual esse dataset foi criado, que é estudo e análise preditiva com treinamento de modelos de machine learning, o mesmo é composto apenas de números inteiros/IDs que representam nome de Curso, Grau de escolaridade e Nacionalidade, entre outros (Exemplo: O inteiro 9070 na coluna "Course" representa o curso "Communication Design"). Foram criadas tabelas de apoio/auxiliares na etapa de carga para facilitar a análise e obtenção das respostas, sem a necessidade de consultar o Catálogo de Dados.
+
+Abaixo estão as tabelas que foram criadas e suas respectivas estruturas:
+- marital status
+
+![MVP - marital status](https://github.com/user-attachments/assets/d1c85b47-2e9f-4bce-a5fa-4c1ea28a624e)
+
+- application_mode
+
+![MVP - application mode](https://github.com/user-attachments/assets/8fd011ab-c78a-459d-824e-31ae2e8786a4)
+
+- course
+
+![MVP - course](https://github.com/user-attachments/assets/4a29e6ff-d724-4af1-ba40-c688be45c359)
+
+- qualification
+
+![MVP - qualification](https://github.com/user-attachments/assets/3d5642c0-4854-4f9a-86f2-750a4d97a574)
+
+- nationality
+
+![MVP - nationality](https://github.com/user-attachments/assets/7e387e6a-a83f-4d5c-aa24-74dcd96cb935)
+
+- occupation
+
+![MVP - occupation](https://github.com/user-attachments/assets/9fba9ce8-e0ef-471f-804a-96e0ec4063ec)
 
 ## 4. Carga
 Execução dos comandos para deleção do database "bronze" caso o mesmo já exista e posterior criação do database.
@@ -314,7 +338,7 @@ Query que calcula o percentual de desistência mostrando as 10 idades com maior 
 # Autoavaliação
 Foi possível analisar e buscar respostas para as 10 questões levantadas na seção de Objetivos. Nem todas as perguntas tiveram respostas diretas, devido a complexidade e proximidade dos números obtidos, como por exemplo a pergunta 4 (A qualificação dos pais parece interferir na taxa de abandono dos alunos?). Mas o levantamento das qualificações tanto de pai quanto de mãe que apresentaram maior incidência nos abandonos foi realizado, assim como todos os levantamentos necessários para as demais perguntas.
 
-Como mencionado na seção de Modelagem, o modelo de dados utilizado era flat, ou seja, um único arquivo que já continha todas as informações e correlações necessárias. Porém, muitas dessas informações eram representadas por IDs (números inteiros). No momento de executar a etapa de Análise e Solução do Problema, não mostrou-se factível obter esses IDs para representar valores de Curso, Grau de escolaridade e Nacionalidade, tendo que buscar o real valor no catálogo de dados. Por esse motivo, foram criadas tabelas auxiliares que ao serem utilizadas, possibilitaram a obtenção dos valores diretamente na execução das queries, sem necessidade de consulta no catálogo.
+Como mencionado na seção de Modelagem, o modelo de dados utilizado era flat, ou seja, um único arquivo que já continha todas as informações e correlações necessárias. Porém, muitas dessas informações eram representadas por IDs (números inteiros). No momento de executar a etapa de Análise e Solução do Problema, não mostrou-se factível obter esses IDs para representar valores de Curso, Grau de escolaridade e Nacionalidade, tendo que buscar o real valor no catálogo de dados. Por esse motivo, foram criadas tabelas auxiliares que ao serem utilizadas, possibilitaram a obtenção dos valores diretamente na execução das queries, sem necessidade de consulta ao catálogo.
 
 Como o dataset obtido já havia passado por um pré processamento e tratamentos necessários, não utilizamos nesse trabalho a estratégia de criar as tabelas num database raw e depois evoluí-las para camadas mais especializadas. As tabelas foram criadas e utilizadas todas num único database nomeado de bronze.
 
