@@ -174,8 +174,48 @@ Query que calcula o percentual de desistência mostrando que o período noturno 
 <img width="678" alt="image" src="https://github.com/user-attachments/assets/8ee9fa25-d4c7-47b9-9294-528427b93a26" />
 
 - O percentual de abandono de alunos estrangeiros é maior do que o percentual de abandono dos portugueses?
+
+Criação de tabela temporária com a quantidade de registros agrupados pelo campo "International"
+<img width="676" alt="image" src="https://github.com/user-attachments/assets/254a0838-5b90-4fb0-a98d-5083ea3b1dd8" />
+
+Criação de tabela temporária com a quantidade de desistência agrupadas pelo campo "International"
+<img width="674" alt="image" src="https://github.com/user-attachments/assets/8194585f-2bd2-4320-9d35-2f174c8fcd37" />
+
+Query que calcula o percentual de desistência mostrando equilíbrio entre a desistência de portugueses (representado pelo inteiro 0) e os estrangeiros (representado pelo inteiro 1). Mesmo que equilibrado, a desistência de portugueses mostrou-se ligeiramente maior do que a desistência de alunos de outros países.
+
+<img width="674" alt="image" src="https://github.com/user-attachments/assets/ea975591-1be6-4c53-aa27-780bf11b7fac" />
+
+
 - A qualificação dos pais parece interferir na taxa de abandono dos alunos?
+
+Criação de tabela temporária com a quantidade de registros por escolaridade da mãe
+<img width="674" alt="image" src="https://github.com/user-attachments/assets/8ed3399e-307e-40ad-a703-ae817cc832bb" />
+
+Criação de tabela temporária com a quantidade de desistência por escolaridade da mãe
+<img width="674" alt="image" src="https://github.com/user-attachments/assets/4428967a-6c14-402a-ac21-170ac52b17b6" />
+
+Query que calcula o percentual de desistência mostrando os 10 níveis de escolaridade das mães com maior percentual
+<img width="675" alt="image" src="https://github.com/user-attachments/assets/ab0953dc-3784-4c5a-bb8d-8dfd4da41882" />
+
+Criação de tabela temporária com a quantidade de registros por escolaridade do pai
+<img width="676" alt="image" src="https://github.com/user-attachments/assets/80615989-835f-441a-89bb-487288fc2413" />
+
+Criação de tabela temporária com a quantidade de desistência por escolaridade do pai
+<img width="674" alt="image" src="https://github.com/user-attachments/assets/b1118224-a0f2-4c94-a625-febdbca40be8" />
+
+Query que calcula o percentual de desistência mostrando os 10 níveis de escolaridade dos pais com maior percentual
+<img width="675" alt="image" src="https://github.com/user-attachments/assets/be3a53ac-5c96-46ce-8ea2-33eb5d0484d6" />
+
 - A ocupação dos pais parece interferir na taxa de abandono dos alunos?
+
+A mesma lógica de criação de uma tabela temporária calculando a quantidade de registros por ocupação e depois uma tabela temporária calculando a quantidade de desistência por ocupação foi aplicado para a mãe e o pai.
+
+Query que calcula o percentual de desistência mostrando as 10 ocupações das mães com maior percentual
+<img width="675" alt="image" src="https://github.com/user-attachments/assets/5f819c1d-fba4-46b4-b12d-ad61de5f6932" />
+
+Query que calcula o percentual de desistência mostrando os 10 ocupações dos pais com maior percentual
+<img width="674" alt="image" src="https://github.com/user-attachments/assets/7e861a73-886f-4c0d-b450-0610132f5878" />
+
 - Alunos com notas de ingresso menores têm maior participação no número de abandonos?
 - Alunos com necessidades especiais têm maior tendência a abandonar o curso?
 - Qual o percentual de abandono por sexo?
