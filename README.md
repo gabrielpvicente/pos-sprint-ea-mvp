@@ -230,6 +230,7 @@ Query que obtém as 10 maiores notas
 <img width="673" alt="image" src="https://github.com/user-attachments/assets/e36fa542-a817-480f-a892-4966ac73f832" />
 
 Query que calcula o percentual de desistência mostrando as 10 notas com maior percentual. É possível verificar uma maior incidência de notas mais baixas nessa listagem.
+
 <img width="676" alt="image" src="https://github.com/user-attachments/assets/4b4e5623-90d9-417c-b2b9-b39e4ee2b49f" />
 
 
@@ -264,6 +265,7 @@ Query que obtém as 10 idades mais altas no momento de ingresso
 <img width="674" alt="image" src="https://github.com/user-attachments/assets/450c14b9-5428-42ad-b8ad-ce3c942efd79" />
 
 Query que calcula o percentual de desistência mostrando as 10 idades com maior percentual. É possível observar predominança de alunos mais velhos com maior taxa de abandono.
+
 <img width="675" alt="image" src="https://github.com/user-attachments/assets/14078aa4-2ad8-49b8-a9fb-d0c92595b7f1" />
 
 
