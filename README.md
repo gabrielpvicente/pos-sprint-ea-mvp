@@ -49,7 +49,7 @@ Caso necessário, a imagem abaixo está disponibilizada também em formato xlsx 
 
 https://github.com/gabrielpvicente/pos-sprint-ea-mvp/blob/main/Modelagem%20-%20MVP%20-%20Eng%20Dados.xlsx
 
-![image](https://github.com/user-attachments/assets/df95ea03-648a-4dce-ad37-4dc2314794b3)
+![MVP-2](https://github.com/user-attachments/assets/ea66ad2f-92fd-40ad-bef6-ac79f76145cc)
 
 ## 4. Carga
 Execução dos comandos para deleção do database "bronze" caso o mesmo já exista e posterior criação do database.
