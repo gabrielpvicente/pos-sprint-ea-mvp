@@ -13,7 +13,7 @@ Contudo, não foram realizadas as análises descritivas e diagnósticas. Dessa f
 4. A qualificação dos pais parece interferir na taxa de abandono dos alunos?
 5. A ocupação dos pais parece interferir na taxa de abandono dos alunos?
 6. Alunos com notas de ingresso menores têm maior participação no número de abandonos?
-7 Alunos com necessidades especiais têm maior tendência a abandonar o curso?
+7. Alunos com necessidades especiais têm maior tendência a abandonar o curso?
 8. Qual o percentual de abandono por sexo?
 9. O percentual de abandono de alunos com bolsa de estudos é menor?
 10. A idade do aluno no momento do ingresso parece interferir no abandono do curso?
