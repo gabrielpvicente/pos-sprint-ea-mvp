@@ -5,7 +5,7 @@ Repositório de base para o MVP da Sprint de Engenharia de Dados da pós PUCRJ
 Na sprint de Machine Learning e Analytics eu trabalhei com um dataset criado para um projeto que tinha como objetivo contribuir com a redução do número de abandonos nos cursos universitários de Portugal.
 A hipótese é que com base no histórico escolar do estudante, informações demográficas e socioeconômicas coletadas no momento da matrícula, somados à performance do aluno ao final do primeiro e segundo semestre, é possível prever a desistência ou sucesso acadêmico.
 No final do trabalho eu encontrei os modelos de classificação com melhor acurácia para prever o abandono ou sucesso acadêmico com base nas variáveis contidas no dataset.
-Contudo, não foram realizadas as análises descritivas e diagnósticas. Dessa forma, meu objetivo para o MVP da Sprint de Engenharia de Dados é entender quais os principais fatores que causaram o abandono dos cursos universitários em Portugal, buscando responder as seguintes questões:
+Contudo, não foram realizadas as análises descritivas e diagnósticas. Dessa forma, meu objetivo para o MVP da Sprint de Engenharia de Dados é entender quais os possíveis fatores que causaram o abandono dos cursos universitários em Portugal, buscando responder as seguintes questões:
 
 1. Quais são os cursos com maior percentual de abandono?
 2. Há diferença entre o número de abandonos devido ao período do curso (noturno ou diurno)?
@@ -33,7 +33,7 @@ O dataset em questão está licensiado sob a [Creative Commons Attribution 4.0 I
 ## 2. Coleta
 O dataset foi baixado do link referenciado na seção acima e feito o upload num repositório do github: https://github.com/gabrielpvicente/pos-sprint-ml-a-mvp/blob/main/data.csv
 
-A coleta desse dataset e carregamento para dentro do Databricks foi realizada fazendo a leitura com a biblioteca pandas, como é possível ver na imagem abaixo:
+A coleta desse dataset e carregamento para dentro do Databricks foi realizada com o uso da biblioteca pandas, como é possível ver na imagem abaixo:
 <p align="center">
   <img width="680" alt="image" src="https://github.com/user-attachments/assets/16f941c4-d7d2-426a-a145-3d6b174bb108" />
 </p>
@@ -48,7 +48,9 @@ https://github.com/gabrielpvicente/pos-sprint-ea-mvp/blob/main/Modelagem%20-%20M
 
 ![MVP-2](https://github.com/user-attachments/assets/ea66ad2f-92fd-40ad-bef6-ac79f76145cc)
 
-Devido a finalidade para a qual esse dataset foi criado, que é estudo e análise preditiva com treinamento de modelos de machine learning, o mesmo é composto apenas de números inteiros/IDs que representam nome de Curso, Grau de escolaridade e Nacionalidade, entre outros (Exemplo: O inteiro 9070 na coluna "Course" representa o curso "Communication Design"). Foram criadas tabelas de apoio/auxiliares na etapa de carga para facilitar a análise e obtenção das respostas, sem a necessidade de consultar o Catálogo de Dados.
+Devido a finalidade inicial para a qual esse dataset foi criado, que é o estudo e análise preditiva com treinamento de modelos de machine learning, o mesmo é composto apenas de números inteiros/IDs que representam nome de Curso, Grau de escolaridade, Nacionalidade, entre outros atributos (Exemplo: O inteiro 9070 na coluna "Course" representa o curso "Communication Design"). 
+
+Foram criadas tabelas de apoio/auxiliares na etapa de carga para facilitar a obtenção das respostas, sem a necessidade de ter que consultar o Catálogo de Dados de forma manual para entender os resultados obtidos. Como essas tabelas não possuem informações além do ID (inteiro) e o Valor (String) que ele representa, continuamos considerando que o modelo de dados é flat, uma vez que todas as análises são feitas com base nos dados contidos no dataset. 
 
 Abaixo estão as tabelas que foram criadas e suas respectivas estruturas:
 - marital status
@@ -184,7 +186,7 @@ Criação de tabela temporária com a quantidade de desistência por curso
 <img width="677" alt="image" src="https://github.com/user-attachments/assets/fd2b072b-9d38-48cd-a44d-b26e7a0a329d" />
 </p>
 
-Query que calcula o percentual de desistência mostrando os 5 cursos com maior taxa de abandono
+Query que calcula o percentual de desistência mostrando os 5 cursos com maior taxa de abandono.
 <p align="center">
 <img width="673" alt="image" src="https://github.com/user-attachments/assets/5c8f6395-40ee-42e8-91d1-b552bdc8cc32" />
 </p>
@@ -201,7 +203,7 @@ Criação de tabela temporária com a quantidade de desistência por período
 <img width="676" alt="image" src="https://github.com/user-attachments/assets/9745c416-8ad3-4e29-a18b-ae558716b877" />
 </p>
 
-Query que calcula o percentual de desistência mostrando que o período noturno (representado pelo inteiro 0) tem maior taxa de desistência se comparado ao período diurno (representado pelo inteiro 1)
+Query que calcula o percentual de desistência mostrando que o período noturno (representado pelo inteiro 0) tem maior taxa de desistência se comparado ao período diurno (representado pelo inteiro 1).
 <p align="center">
 <img width="678" alt="image" src="https://github.com/user-attachments/assets/8ee9fa25-d4c7-47b9-9294-528427b93a26" />
 </p>
@@ -235,7 +237,8 @@ Criação de tabela temporária com a quantidade de desistência por escolaridad
 <p align="center">
 <img width="674" alt="image" src="https://github.com/user-attachments/assets/4428967a-6c14-402a-ac21-170ac52b17b6" />
 </p>
-Query que calcula o percentual de desistência mostrando os 10 níveis de escolaridade das mães com maior percentual
+
+Query que calcula o percentual de desistência mostrando os 10 níveis de escolaridade das mães com maior percentual.
 <p align="center">
 <img width="675" alt="image" src="https://github.com/user-attachments/assets/ab0953dc-3784-4c5a-bb8d-8dfd4da41882" />
 </p>
@@ -250,7 +253,7 @@ Criação de tabela temporária com a quantidade de desistência por escolaridad
 <img width="674" alt="image" src="https://github.com/user-attachments/assets/b1118224-a0f2-4c94-a625-febdbca40be8" />
 </p>
 
-Query que calcula o percentual de desistência mostrando os 10 níveis de escolaridade dos pais com maior percentual
+Query que calcula o percentual de desistência mostrando os 10 níveis de escolaridade dos pais com maior percentual.
 <p align="center">
 <img width="675" alt="image" src="https://github.com/user-attachments/assets/be3a53ac-5c96-46ce-8ea2-33eb5d0484d6" />
 </p>
@@ -336,7 +339,7 @@ Query que calcula o percentual de desistência mostrando as 10 idades com maior 
 </p>
 
 # Autoavaliação
-Foi possível analisar e buscar respostas para as 10 questões levantadas na seção de Objetivos. Nem todas as perguntas tiveram respostas diretas, devido a complexidade e proximidade dos números obtidos, como por exemplo a pergunta 4 (A qualificação dos pais parece interferir na taxa de abandono dos alunos?). Mas o levantamento das qualificações tanto de pai quanto de mãe que apresentaram maior incidência nos abandonos foi realizado, assim como todos os levantamentos necessários para as demais perguntas.
+Foi possível analisar e buscar respostas para as 10 questões levantadas na seção de Objetivos. Nem todas as perguntas tiveram respostas diretas, devido a complexidade e proximidade dos números obtidos, como por exemplo a pergunta 4 (A qualificação dos pais parece interferir na taxa de abandono dos alunos?). Mas o levantamento das qualificações tanto de pai quanto de mãe que apresentaram maior incidência nos abandonos foi realizado, assim como todos os levantamentos necessários para as demais perguntas. Os fatores que mais apresentaram relação com o abadono do curso são: período noturno, falta de trabalho dos pais, notas de ingresso baixas, sexo masculino, não ter bolsa de estudos e idade alta ao ingressar no curso.
 
 Como mencionado na seção de Modelagem, o modelo de dados utilizado era flat, ou seja, um único arquivo que já continha todas as informações e correlações necessárias. Porém, muitas dessas informações eram representadas por IDs (números inteiros). No momento de executar a etapa de Análise e Solução do Problema, não mostrou-se factível obter esses IDs para representar valores de Curso, Grau de escolaridade e Nacionalidade, tendo que buscar o real valor no catálogo de dados. Por esse motivo, foram criadas tabelas auxiliares que ao serem utilizadas, possibilitaram a obtenção dos valores diretamente na execução das queries, sem necessidade de consulta ao catálogo.
 
