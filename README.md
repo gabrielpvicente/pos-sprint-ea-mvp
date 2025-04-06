@@ -171,6 +171,11 @@ Nenhum registro apareceu mais de 1 vez no dataset.
   <img width="674" alt="image" src="https://github.com/user-attachments/assets/beacc20a-4292-489b-8511-edca758eb0cc" />
 </p>
 
+**Contagem de Registros:** Realiza uma contagem dos registros existentes em cada coluna.
+Todas as colunas possuem a mesma quantidade de registros.
+<p align="center">
+  <img width="675" alt="image" src="https://github.com/user-attachments/assets/1eae3cf7-7a10-4def-afac-86f9e2b4d23b" />
+</p>
 
 ###  b. Solução do problema
 
